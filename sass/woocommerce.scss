@@ -1,61 +1,6 @@
 /*!
-<<<<<<< HEAD
  * Theme Name: Inland Toner Child
  *
  * WooCommerce styles override
-=======
- * Theme Name: Wonkasoft Starter
- *
- * WooCommerce styles override
  */
 
-/**
- * WooCommerce color variables
- */
-$woocommerce__color-error: #e2401c;
-$woocommerce__color-success: #0f834d;
-$woocommerce__color-info: #3D9CD2;
-
-/**
- * Imports
- */
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
-
-/**
- * Shop tables
- */
-@import "shop/tables";
-
-/**
- * Products
->>>>>>> bade20ebf9b5db02a19bf73cdc65ae6fc2fedbd7
- */
-
-<<<<<<< HEAD
-=======
-/**
- * Single product
- */
-@import "shop/single-product";
-
-/**
- * Checkout
- */
-@import "shop/checkout";
-
-/**
- * General WooCommerce components
- */
-@import "shop/components";
-
-/**
- * WooCommerce widgets
- */
-@import "shop/widgets";
-
-/**
- * WooCommerce pages
- */
-@import "shop/woo-pages";
->>>>>>> bade20ebf9b5db02a19bf73cdc65ae6fc2fedbd7
