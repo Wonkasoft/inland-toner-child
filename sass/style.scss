@@ -12,3 +12,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 */
 @import "mixins/mixins-master";
 
+body.home.wonkasoft-theme-home {
+
+    #page {
+
+        main#main {
+            grid-template-columns: auto;
+        }
+    }
+}

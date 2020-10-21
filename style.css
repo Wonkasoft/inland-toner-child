@@ -9,5 +9,5 @@ License URI: LICENSE
 Template: wonkasoft-starter
 Text Domain: wonkasoft-starter
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
-*/
+*/body.home.wonkasoft-theme-home #page main#main{grid-template-columns:auto}
 /*# sourceMappingURL=maps/style.css.map */
