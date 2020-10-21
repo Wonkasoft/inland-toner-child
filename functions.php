@@ -32,7 +32,7 @@ function custom_enqueues_for_child() {
 	 wp_register_style( 'inland-toner-child-style', get_stylesheet_directory_uri() . '/style.css', array( 'wonkasoft-starter-style' ), wp_get_theme()->get( 'Version' ) );
 	 wp_enqueue_style( 'inland-toner-child-style' );
 
-	 wp_enqueue_script( 'inland-toner-child-js', get_stylesheet_directory_uri() . '/assets/js/inland-toner-child-style.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
+	 wp_enqueue_script( 'inland-toner-child-js', get_stylesheet_directory_uri() . '/assets/js/inland-toner-child.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'custom_enqueues_for_child', 99 );
