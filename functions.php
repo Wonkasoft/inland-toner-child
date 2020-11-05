@@ -25,14 +25,12 @@ add_action( 'after_setup_theme', 'wonkasoft_child_setup' );
  * Enqueues styles and scripts
  */
 function custom_enqueues_for_child() {
-	 wp_dequeue_style( 'wonkasoft-starter-style' );
-	 wp_deregister_style( 'wonkasoft-starter-style' );
-	 wp_register_style( 'wonkasoft-starter-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-	 wp_enqueue_style( 'wonkasoft-starter-style' );
-	 wp_register_style( 'inland-toner-child-style', get_stylesheet_directory_uri() . '/style.css', array( 'wonkasoft-starter-style' ), wp_get_theme()->get( 'Version' ) );
-	 wp_enqueue_style( 'inland-toner-child-style' );
-
-	 wp_enqueue_script( 'inland-toner-child-js', get_stylesheet_directory_uri() . '/assets/js/inland-toner-child.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
-
+	// disable parent theme styles
+	wp_dequeue_style( 'wonkasoft-starter-style' );
+	wp_deregister_style( 'wonkasoft-starter-style' );
+	wp_deregister_style( 'bootstrap' );
+	// enable child theme styles
+	wp_register_style( 'inland-toner-child-style', get_stylesheet_directory_uri() . '/style.css', NULL, wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'inland-toner-child-style' );
 }
 add_action( 'wp_enqueue_scripts', 'custom_enqueues_for_child', 99 );
