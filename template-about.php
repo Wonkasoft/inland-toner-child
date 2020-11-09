@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+  <main id="main" class="site-main">
   <section class="about-1">
 	<div class="contentBx">
 	  <div class="about-section">
@@ -86,5 +87,6 @@ get_header(); ?>
 	  <img class="lexmark" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/lexmark.png' ); ?>" />
 	</div>
   </section>
+</main>
 
 <?php get_footer(); ?>

@@ -5,6 +5,7 @@
 
 get_header(); ?>
 
+<main id="main" class="site-main">
 <section class="faq1">
   <div class="faq-wrapper">
 	<div class="contentBx">
@@ -209,5 +210,6 @@ get_header(); ?>
 	</div>
   </div>
 </section>
+</main>
 
 <?php get_footer(); ?>

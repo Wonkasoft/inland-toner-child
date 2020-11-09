@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+<main id="main" class="site-main">
   <section class="quote">
 	<div class="content">
 	  <h1>Get a <span>quote</span> and start saving today!</h1>
@@ -79,5 +80,7 @@ get_header(); ?>
 	</div>
 
   </section>
+
+</main>
 
 <?php get_footer(); ?>
