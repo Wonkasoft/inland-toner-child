@@ -20,7 +20,7 @@ get_header(); ?>
   </div>
 
   <div class="pdf">
-		<?php echo do_shortcode( 'toner-list' ); ?>
+		<?php echo do_shortcode( '[toner-list]' ); ?>
   </div>
 
   <p class="cta-pdf">To see where quality toner can take your business, get quote and start saving!</p>
