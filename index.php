@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wonkasoft_Starter
+ * @package inland_toner_child
  */
 
 get_header(); ?>

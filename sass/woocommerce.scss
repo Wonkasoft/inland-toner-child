@@ -4,3 +4,18 @@
  * WooCommerce styles override
  */
 
+ body.wonkasoft-theme-archive {
+
+    &.post-type-archive-product {
+
+        #page {
+            grid-template-columns: 100%;
+            grid-auto-rows: auto;
+
+            header#masthead {
+                grid-area: auto;
+            }
+        }
+    }
+
+ }

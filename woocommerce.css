@@ -2,5 +2,5 @@
  * Theme Name: Inland Toner Child
  *
  * WooCommerce styles override
- */
+ */body.wonkasoft-theme-archive.post-type-archive-product #page{grid-template-columns:100%;grid-auto-rows:auto}body.wonkasoft-theme-archive.post-type-archive-product #page header#masthead{grid-area:auto}
 /*# sourceMappingURL=maps/woocommerce.css.map */
