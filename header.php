@@ -46,7 +46,7 @@
 			<?php
 			if ( is_front_page() && is_home() ) :
 				?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">INLAND <span>Toner</span></a></h1>
 			<?php else : ?>
 					<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1>INLAND <span>Toner</span></h1></a></div>
 					<?php
