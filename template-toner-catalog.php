@@ -17,7 +17,6 @@ get_header(); ?>
 	</p>
 	<p>You can download a copy <a href="<?php echo esc_url( get_stylesheet_directory_uri() . '/files/inlandpdf.pdf' ); ?>" download>here</a></p>
 	<p>Have any questions? Email us at <a href="mailto: support@inlandtoner.com">support@inlandtoner.com</a></p>
-  </div>
 
   <div class="pdf">
 		<?php echo do_shortcode( '[toner-list]' ); ?>
