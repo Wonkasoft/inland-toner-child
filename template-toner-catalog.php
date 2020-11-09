@@ -20,7 +20,7 @@ get_header(); ?>
   </div>
 
   <div class="pdf">
-	<embed src="<?php echo esc_url( get_stylesheet_directory_uri() . '/files/inlandpdf.pdf' ); ?>" height="800" width="900"></embed>
+		<?php echo do_shortcode( '[toner-list]' ); ?>
   </div>
 
   <p class="cta-pdf">To see where quality toner can take your business, get quote and start saving!</p>
