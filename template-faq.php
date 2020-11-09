@@ -1,5 +1,9 @@
-<?php php;/* Template Name: FAQ */ ?>
-<?php phpget_header(); ?>
+<?php
+/**
+ * Template Name: FAQ
+ */
+
+get_header(); ?>
 
 <section class="faq1">
   <div class="faq-wrapper">
@@ -36,7 +40,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Inventory/3BoxGrouping2017.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Inventory/3BoxGrouping2017.jpg' ); ?>" />
 		<figcaption>Figure 1.0 - INLAND Toner packaging</figcaption>
 	  </figure>
 	</div>
@@ -60,7 +64,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Toner/DSCF4135.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Toner/DSCF4135.jpg' ); ?>" />
 		<figcaption>Figure 1.0 - INLAND Toner packaging</figcaption>
 	  </figure>
 	</div>
@@ -95,7 +99,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/ECO-friendly/inkrecycling.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/ECO-friendly/inkrecycling.jpg' ); ?>" />
 		<figcaption>Figure 2.0 - Eco-friendly solutions</figcaption>
 	  </figure>
 	</div>
@@ -124,7 +128,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Toner/Picture perfect product.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Toner/Picture perfect product.jpg' ); ?>" />
 		<figcaption>Figure 3.0 - Picture perfect product</figcaption>
 	  </figure>
 	</div>
@@ -149,7 +153,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Inventory/IMAGEFRONTwithLabel.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Inventory/IMAGEFRONTwithLabel.jpg' ); ?>" />
 		<figcaption>Figure 4.0 - Quality Guarantee</figcaption>
 	  </figure>
 	</div>
@@ -171,7 +175,7 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Toner/2017_02_02_9999_88TV.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Toner/2017_02_02_9999_88TV.jpg' ); ?>" />
 		<figcaption>Figure 5.0 - Efficient printing solutions</figcaption>
 	  </figure>
 	</div>
@@ -199,11 +203,11 @@
 	</div>
 	<div class="faq-img">
 	  <figure>
-		<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Toner/2017_02_02_9999_34TV.jpg" />
+		<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Toner/2017_02_02_9999_34TV.jpg' ); ?>" />
 		<figcaption>Figure 6.0 - ISO 9000 and STMC compliant</figcaption>
 	  </figure>
 	</div>
   </div>
 </section>
 
-<?php phpget_footer(); ?>
+<?php get_footer(); ?>

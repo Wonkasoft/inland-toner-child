@@ -1,5 +1,11 @@
-<?php php;/* Template Name: About Us */ ?>
-<?php phpget_header(); ?>
+<?php
+/**
+ * Template Name: About Us
+ *
+ * @package inland_toner_child
+ */
+
+get_header(); ?>
 
   <section class="about-1">
 	<div class="contentBx">
@@ -26,7 +32,7 @@
 		</p>
 	  </div>
 	</div>
-	<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Inventory/DSCF4109-Edit.jpg" />
+	<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Inventory/DSCF4109-Edit.jpg' ); ?>" />
   </section>
 
   <section class="about-2">
@@ -43,7 +49,7 @@
 		</ul>
 	  </div>
 	</div>
-	<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/Toner/DSCF4135.jpg" />
+	<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/Toner/DSCF4135.jpg' ); ?>" />
   </section>
 
   <section class="page-break">
@@ -58,11 +64,11 @@
 	  testing and manufacturing of our product.
 	</p>
 	<div class="imgBx">
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/CERTIFICATION/stmc.jpg" />
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/CERTIFICATION/iso19798.png" />
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/CERTIFICATION/iso19752.png" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/CERTIFICATION/stmc.jpg' ); ?>" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/CERTIFICATION/iso19798.png' ); ?>" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/CERTIFICATION/iso19752.png' ); ?>" />
 	</div>
-	<img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/CERTIFICATION/iso9001.jpg" />
+	<img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/CERTIFICATION/iso9001.jpg' ); ?>" />
 
   </section>
   </a>
@@ -73,12 +79,12 @@
 	  and Lexmark.
 	</p>
 	<div class="imgBx">
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/MANUFACTURERS/dell.png" />
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/MANUFACTURERS/canon.png" />
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/MANUFACTURERS/hp.png" />
-	  <img src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/MANUFACTURERS/brother.png" />
-	  <img class="lexmark" src="<?php phpecho get_stylesheet_directory_uri(); ?>/assets/images/MANUFACTURERS/lexmark.png" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/dell.png' ); ?>" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/canon.png' ); ?>" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/hp.png' ); ?>" />
+	  <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/brother.png' ); ?>" />
+	  <img class="lexmark" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/assets/images/MANUFACTURERS/lexmark.png' ); ?>" />
 	</div>
   </section>
 
-<?php phpget_footer(); ?>
+<?php get_footer(); ?>

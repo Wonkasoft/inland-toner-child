@@ -1,6 +1,11 @@
 <?php
-/* Template Name: Toner Catalog */ ?>
-<?php get_header(); ?>
+/**
+ * Template Name: Toner Catalog
+ *
+ * @package inland_toner_child
+ */
+
+get_header(); ?>
 
 <section class="toner">
   <h1>Toner Catalog</h1>
@@ -10,12 +15,12 @@
 	  addition to our remanufactured OEMs, we do have compatibles available
 	  which are noted in the catalog.
 	</p>
-	<p>You can download a copy <a href="<?php echo get_stylesheet_directory_uri(); ?>/files/inlandpdf.pdf" download>here</a></p>
+	<p>You can download a copy <a href="<?php echo esc_url( get_stylesheet_directory_uri() . '/files/inlandpdf.pdf' ); ?>" download>here</a></p>
 	<p>Have any questions? Email us at <a href="mailto: support@inlandtoner.com">support@inlandtoner.com</a></p>
   </div>
 
   <div class="pdf">
-	<embed src="<?php echo get_stylesheet_directory_uri(); ?>/files/inlandpdf.pdf" height="800" width="900"></embed>
+	<embed src="<?php echo esc_url( get_stylesheet_directory_uri() . '/files/inlandpdf.pdf' ); ?>" height="800" width="900"></embed>
   </div>
 
   <p class="cta-pdf">To see where quality toner can take your business, get quote and start saving!</p>
