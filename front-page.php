@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 /**
  * The front page template file
