@@ -351,6 +351,40 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   color: red;
 }
 
+/* Manufacturers Styles */
+
+.manufacturers {
+  padding: 50px;
+  text-align: center;
+  background: var(--dark);
+  color: white;
+  margin-top: -100px;
+  margin-bottom: 200px;
+}
+
+.lexmark {
+  background-color: white;
+}
+
+.manufacturers h2 {
+  margin-top: 50px;
+}
+
+.manufacturers p {
+  margin-top: 30px;
+}
+.manufacturers .imgBx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.manufacturers .imgBx img {
+  max-width: 150px;
+}
+
 body {
     font-family: "Roboto", san-serif;
     @include font-size( 1.3 );
