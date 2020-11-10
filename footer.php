@@ -10,7 +10,7 @@
  */
 
 $copyright = get_theme_mod( 'copyright_bar_message', 'all rights reserved.' );
-$msg_align = get_theme_mod( 'copyright_message_alignment', ' text-center' );
+$msg_align = get_theme_mod( 'copyright_message_align', ' text-center' );
 ?>
 
 	<footer id="colophon" class="site-footer container-fluid">
