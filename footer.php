@@ -9,7 +9,8 @@
  * @package Wonkasoft_Starter
  */
 
-$copyright = ( ! empty( get_theme_mod( 'copyright_bar_message', false ) ) ) ? get_theme_mod( 'copyright_bar_message', false ) : 'all rights reserved.';
+$copyright = get_theme_mod( 'copyright_bar_message', 'all rights reserved.' );
+$msg_align = get_theme_mod( 'copyright_message_alignment', ' text-center' );
 ?>
 
 	<footer id="colophon" class="site-footer container-fluid">
@@ -52,19 +53,19 @@ $copyright = ( ! empty( get_theme_mod( 'copyright_bar_message', false ) ) ) ? ge
 		<?php endfor; ?>
 		</div>
 		<div class="row site-info-row">
-			<div class="col col-12">
+			<div class="col col-12<?php echo esc_attr( $msg_align ); ?>">
 				<div class="site-info">
 					<span class="copyright-text">
 					<?php
 						/* translators: %s: CMS name, i.e. WordPress. */
-						printf( esc_html__( '&copy; %1$1s %2$2s', 'wonkasoft-starter' ), gmdate( 'Y' ), esc_html( $copyright ) );
+						printf( esc_html( '&copy; %1$1s %2$2s', 'wonkasoft-starter' ), esc_html( gmdate( 'Y' ) ), esc_html( $copyright ) );
 					?>
 					</span>
 					<span class="sep"> | </span>
 					<span class="website-credit-text">
 					<?php
 						/* translators: 1: Theme name, 2: Theme author. */
-						printf( esc_html__( 'Website by %s.', 'wonkasoft-starter' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
+						printf( esc_html__( 'Website by %s', 'wonkasoft-starter' ), '<a href="https://wonkasoft.com">Wonkasoft</a>' );
 					?>
 					</span>
 				</div><!-- .site-info -->
