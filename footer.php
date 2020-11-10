@@ -9,8 +9,9 @@
  * @package Wonkasoft_Starter
  */
 
-$copyright = get_theme_mod( 'copyright_bar_message', 'all rights reserved.' );
-$msg_align = get_theme_mod( 'copyright_message_align', ' text-center' );
+$copyright_bar_color = get_theme_mod( 'copyright_bar_color', 'transparent' );
+$copyright           = get_theme_mod( 'copyright_bar_message', 'all rights reserved.' );
+$msg_align           = get_theme_mod( 'copyright_message_align', ' text-center' );
 ?>
 
 	<footer id="colophon" class="site-footer container-fluid">
@@ -52,7 +53,7 @@ $msg_align = get_theme_mod( 'copyright_message_align', ' text-center' );
 			</div>
 		<?php endfor; ?>
 		</div>
-		<div class="row site-info-row">
+		<div class="row site-info-row" style="background:<?php echo esc_attr( $copyright_bar_color ); ?>;">
 			<div class="col col-12<?php echo esc_attr( $msg_align ); ?>">
 				<div class="site-info">
 					<span class="copyright-text">
