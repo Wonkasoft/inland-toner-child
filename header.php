@@ -96,6 +96,6 @@
 				?>
 		</nav><!-- #site-navigation -->
 
-		<a href="javascript.void[0];" class="btn">Contact</a>
+		<a href="/quote/" class="btn">Contact</a>
 		
 	</header><!-- #masthead -->
