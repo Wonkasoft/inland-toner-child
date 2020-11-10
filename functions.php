@@ -67,3 +67,11 @@ function custom_enqueues_for_child() {
 	 wp_enqueue_script( 'inland-toner-child-js', get_stylesheet_directory_uri() . '/assets/js/inland-toner-child.min.js', array( 'jquery' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'wp_enqueue_scripts', 'custom_enqueues_for_child', 99 );
+
+function wonkasoft_page_attributes_meta_box_template( $template, $post ) {
+	echo "<pre>\n";
+	print_r( $post );
+	echo "</pre>\n";
+
+}
+add_action( 'page_attributes_meta_box_template', 'wonkasoft_page_attributes_meta_box_template' );

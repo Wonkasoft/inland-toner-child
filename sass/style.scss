@@ -247,13 +247,14 @@ a {
             position: relative;
             height: 100%;
             color: #ffffff;
+            overflow: unset;
 
             header.entry-header {
-                height: 575px;
+                height: 100%;
 
                 .home-page-thumbnail {
                     padding: 45px 15px;
-                    height: 450px;
+                    height: 100%;
                     text-align: center;
 
                     img.US-flag {
@@ -365,7 +366,7 @@ body.home.wonkasoft-theme-home {
 
         main#main {
             padding-top: 133px;
-            min-height: 575px;
+            min-height: 100%;
         }
     }
 }
