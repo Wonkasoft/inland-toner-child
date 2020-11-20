@@ -435,7 +435,7 @@ a {
         }
 
         &.header-column-3 {
-            grid-template-columns: 75px auto 75px;
+            grid-template-columns: 55px auto 55px;
 
             @include media-breakpoint( md ) {
                 grid-template-columns: 450px auto 350px;
@@ -482,7 +482,7 @@ a {
             grid-template-areas: unset;
             grid-template-columns: auto auto;
             align-items: center;
-            grid-gap: 8px;
+            grid-gap: 4px;
 
             div.custom-logo {
                 grid-area: auto;
@@ -490,7 +490,7 @@ a {
                 a {
 
                     img {
-                        max-width: 85px;
+                        max-width: 55px;
 
                         @include media-breakpoint( md ) {
                             max-width: 125px;
@@ -506,11 +506,15 @@ a {
 
                     h1 {
                         font-weight: 600;
-                        @include font-size( 2.3 );
+                        @include font-size( 1.5 );
 
                         span {
                             color: #222222;
                             font-weight: 500;
+                        }
+
+                        @include media-breakpoint( md ) {
+                            @include font-size( 2.3 );
                         }
                     }
                 }
@@ -650,7 +654,7 @@ a {
 
             &.mobile-btn {
                 color: rgba( #EB2B01, 1 );
-                @include font-size( 3 );
+                @include font-size( 2.3 );
 
                 @include media-breakpoint( md ) {
                     display: none;
@@ -760,6 +764,14 @@ a {
                     }
                 }
 
+                .wp-block-columns {
+                    margin: auto;
+
+                    .wp-block-getwid-image-box__image-container {
+                        margin: auto;
+                    }
+                }
+
                 .eff-qul-eco {
 
                     .wp-block-column {
@@ -790,7 +802,7 @@ a {
 
     footer#colophon {
         padding-bottom: 0;
-        background: #cb0000;
+        background: #cb1200;
 
         div.footer-columns-row {
             padding: 45px 0;
@@ -839,6 +851,19 @@ a {
             color: #ffffff;
             padding: 15px 0;
             background: #202020;
+            @include font-size( .8 );
+
+            a {
+                @include font-size( .8 );
+            }
+
+            @include media-breakpoint( md ) {
+                @include font-size( 1.1 );
+
+                a {
+                    @include font-size( 1.1 );
+                }
+            }
         }
     }
 }
