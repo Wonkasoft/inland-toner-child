@@ -81,10 +81,10 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<span class="hang-a-bur hang-a-bur-top"></span>
-				<span class="hang-a-bur hang-a-bur-mid"></span>
-				<span class="hang-a-bur hang-a-bur-bottom"></span>
-			</button>
+					<span class="hang-a-bur hang-a-bur-top"></span>
+					<span class="hang-a-bur hang-a-bur-mid"></span>
+					<span class="hang-a-bur hang-a-bur-bottom"></span>
+				</button>
 			<?php
 				wp_nav_menu(
 					array(
@@ -96,6 +96,7 @@
 				?>
 		</nav><!-- #site-navigation -->
 
-		<a href="/quote/" class="btn">Contact</a>
+		<a href="<?php echo esc_url( get_site_url() . '/quote/' ); ?>" class="btn mobile-btn"><i class="far fa-envelope"></i></a>
+		<a href="<?php echo esc_url( get_site_url() . '/quote/' ); ?>" class="btn desktop-btn">Contact</a>
 		
 	</header><!-- #masthead -->

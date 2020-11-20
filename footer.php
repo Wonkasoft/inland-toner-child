@@ -18,7 +18,7 @@ $msg_align           = get_theme_mod( 'copyright_message_align', ' text-center' 
 		<div class="row footer-columns-row">
 		<?php
 		$get_column_count = get_theme_mod( 'footer_columns', 1 );
-		$col_class        = ( 1 < $get_column_count ) ? 'col col-12 col-md-' . ( 12 / $get_column_count ) : 'col col-12';
+		$col_class        = ( 1 < $get_column_count ) ? 'col col-12 col-md-' . ( 12 / $get_column_count / $get_column_count ) : 'col col-12';
 		for ( $i = 0; $i < $get_column_count; $i++ ) :
 
 			?>
@@ -27,12 +27,12 @@ $msg_align           = get_theme_mod( 'copyright_message_align', ' text-center' 
 				switch ( ( $i + 1 ) ) :
 					case 1:
 						?>
-							<h3 class="<?php echo esc_attr( 'footer-title footer-menu-' . ( $i + 1 ) . '-title' ); ?>">Information</h3>
+							<h3 class="<?php echo esc_attr( 'footer-title footer-menu-' . ( $i + 1 ) . '-title' ); ?>">More about us</h3>
 							<?php
 						break;
 					case 2:
 						?>
-							<h3 class="<?php echo esc_attr( 'footer-title footer-menu-' . ( $i + 1 ) . '-title' ); ?>">Toner</h3>
+							<h3 class="<?php echo esc_attr( 'footer-title footer-menu-' . ( $i + 1 ) . '-title' ); ?>">Get in touch</h3>
 							<?php
 						break;
 					case 3:

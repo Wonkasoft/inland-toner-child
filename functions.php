@@ -22,8 +22,8 @@ if ( ! function_exists( 'wonkasoft_child_setup' ) ) :
 			case 2:
 				register_nav_menus(
 					array(
-						'footer-menu-1' => esc_html( 'Information', 'inland_toner_child' ),
-						'footer-menu-2' => esc_html( 'Contact Us', 'inland_toner_child' ),
+						'footer-menu-1' => esc_html( 'More about Us', 'inland_toner_child' ),
+						'footer-menu-2' => esc_html( 'Get in touch', 'inland_toner_child' ),
 					)
 				);
 				break;
