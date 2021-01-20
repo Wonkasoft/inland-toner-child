@@ -25,12 +25,21 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     width: 100%;
     display: flex;
     background: var(--dark);
+    flex-wrap: wrap;
+
+    @include media-breakpoint( md ) {
+        flex-wrap: nowrap;
+    }
 }
 
 .about-1 .contentBx {
     padding: 50px;
     color: white;
-    width: 50%;
+    width: 100%;
+
+    @include media-breakpoint( md ) {
+        width: 50%;
+    }
 }
 
 .about-section {
@@ -58,12 +67,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 
 .about-1 img {
-    width: 40%;
-    height: 400px;
+    width: 80%;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+
+    @include media-breakpoint( md ) {
+        width: 40%;
+        height: 400px;
+    }
 }
 
 /*--------------------------------*/
@@ -545,6 +559,7 @@ a {
             div.menu-main-container {
                 grid-area: auto;
                 height: 100%;
+                overflow: hidden;
 
                 ul {
                     justify-content: unset;

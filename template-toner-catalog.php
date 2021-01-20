@@ -24,7 +24,7 @@ get_header(); ?>
 	</div>
 
 	<p class="cta-pdf">To see where quality toner can take your business, get quote and start saving!</p>
-	<button class="pdf-cta"><a href="/quote">GET A QUOTE</a></button>
+	<button class="pdf-cta"><a href="<?php echo esc_url( get_site_url() . '/quote', null, 'display' ); ?>">GET A QUOTE</a></button>
   </div>
 </section>
 </main>
