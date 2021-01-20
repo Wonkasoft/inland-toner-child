@@ -87,20 +87,30 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     width: 100%;
     display: flex;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .about-2 .contentBx {
     padding: 50px;
     color: var(--dark);
-    width: 50%;
+    width: 100%;
+
+    @include media-breakpoint( md ) {
+        width: 50%;
+    }
 }
 
 .about-2 img {
-    width: 45%;
-    height: 400px;
+    width: 80%;
+    height: auto;
     margin-top: -50px;
     margin-right: auto;
     margin-left: auto;
+
+    @include media-breakpoint( md ) {
+        width: 40%;
+        height: 400px;
+    }
 }
 
 .about-2 li {
