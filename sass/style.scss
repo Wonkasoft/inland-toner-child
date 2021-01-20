@@ -70,13 +70,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     width: 80%;
     height: auto;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: -50px;
     margin-left: auto;
     margin-right: auto;
 
     @include media-breakpoint( md ) {
         width: 40%;
         height: 400px;
+        margin-bottom: auto;
     }
 }
 
@@ -86,6 +87,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     position: relative;
     width: 100%;
     display: flex;
+    margin-top: 50px;
     margin-bottom: 50px;
     flex-wrap: wrap;
 
