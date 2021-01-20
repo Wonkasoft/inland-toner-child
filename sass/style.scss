@@ -88,6 +88,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     display: flex;
     margin-bottom: 50px;
     flex-wrap: wrap;
+
+    @include media-breakpoint( md ) {
+        flex-wrap: nowrap;
+    }
 }
 
 .about-2 .contentBx {
